@@ -1,0 +1,12 @@
+doctype html5
+html
+  head
+    title Flyers Season Tickets Manager
+    link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/vendor/toastr/toastr.css')
+  body(ng-app='app')
+    include currentUser
+    block content
+    include scripts
