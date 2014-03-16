@@ -1,14 +1,15 @@
 extends ../includes/layout
 block content
-    .navbar.navbar-inverse.navbar-fixed-top
+    .navbar.navbar-default.navbar-fixed-top
         .container
             .navbar-header
                 a.navbar-brand(href="/") Flyers Season Tickets Manager
-                    h6 -A Web app for the selection and management of season tickets for groups.
             .navbar-collapse.collapse
                 ul.nav.navbar-nav
                     li
                         a(href="/") Home
+                    li
+                        a(href="/schedule") Schedule
                 div(ng-include="'/partials/account/navbar-login'")
     section.content
         div(ng-view)
